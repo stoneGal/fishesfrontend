@@ -1,38 +1,43 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.wrapper{
+    background-image: url(./images/firstimage.jpg);
+    margin:0px;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: auto;
+    position: absolute; 
+      top: 0; 
+      left: 0;
+      animation-name: changeImage;
+      animation-duration: 30s;
+      animation-iteration-count: infinite;
   }
-}
+  @keyframes changeImage {
+    0%   {background-image: url(./images/eightth.jpg);}
+    25%  {background-image: url(./images/sixth.jpg);}
+    40%  {background-image: url(./images/forth.jpg);}
+    55% {background-image: url(./images/ninth.jpg);}
+    70% {background-image: url(./images/second.jpg);}
+    85% {background-image: url(./images/seventh.jpg);}
+    90% {background-image: url(./images/fifth.jpg);}
+    100% {background-image: url(./images/third.jpg);}
+    
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
   }
-  to {
-    transform: rotate(360deg);
+  .innerdiv{
+    height: 200%;
+    width: 100%;
+    background-color: rgba(0,0,0,0.6);
   }
-}
+  
+  .midcontent{
+    color: white; 
+    text-align: center;
+    font-family:  Georgia, serif;
+    font-size: 20px;
+    position: relative;
+    top: 100px;
+  }
